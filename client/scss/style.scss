@@ -1,0 +1,125 @@
+@import './colors';
+@import './responsive';
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background: url('../images/grossary.jpg') no-repeat;
+    background-size: cover;
+    // color: $text-color;
+}
+
+h1 {
+    display: flex;
+    margin-top: 2%;
+    width: 100px;
+    margin-left: calc( 50% - 100px );
+    margin-right: calc( 50% - 100px );
+    align-items: center;
+    font-size: 35px;
+    color: $main-color;
+    // &:before {
+    //     content: '';
+    //     background: url('../images/jingiss.png') no-repeat;
+    //     background-size: 100%;
+    //     display: block;
+    //     margin-right: 5px;
+    //     width: 50px;
+    //     height: 50px;
+    // }
+}
+
+button:focus {
+    //button click 後の青い枠を消す
+	outline:0;
+}
+
+.appPane {
+    padding-top: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #ffffffd1;
+}
+
+#addFormPane {
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 20%;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    button {
+        margin-top: 10px;
+        margin-left: 10px;
+        background-color: #285b8790;
+        color: #e4e4e4;
+    }
+}
+
+.itemListPane {
+    position: center;
+    // padding-top: 5px;
+    // padding-bottom: 5px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.listItem {
+    margin-left: 5px;
+    width: 200px;
+    .MuiIconButton-label {
+        color: $checksystem-color;
+    }
+    span {
+        color: $text-color;
+        margin-left: 2%;
+    }
+}
+
+.checkButton {
+    display: block;
+    margin-left: 15%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    padding-left: 23%;
+    width: auto;
+    button {
+        margin-left: 2%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 100px;
+    }
+}
+
+#button-cheked{
+    background-color: $checksystem-color;
+    color: #e4e4e4;
+}
+
+
+#index {
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#bottomicon {
+    background: url('../images/jingiss.png') no-repeat;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+}
+
+
+// #nav {
+//     text-align: right;
+// }
+
+//_variavles.scssを読み込み、変数を利用するScss-file。
